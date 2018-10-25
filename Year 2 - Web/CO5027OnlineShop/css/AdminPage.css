@@ -1,0 +1,201 @@
+﻿* {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+}
+
+#content_container {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color:#FFFFFF;
+}
+
+#administrator_container {
+    height: auto;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    color: #757575;
+    text-align: left;
+    border: solid 2px #BDBDBD;
+    background: #CFD8DC;
+}
+.adminHeading{
+    font-size: 3em;
+    text-shadow: 0px 0px 10px #455A64;
+    color: #FFFFFF;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #BDBDBD;
+    font-weight:unset;
+}
+.usersHeader, .productsHeader {
+    padding: 0px;
+    margin:0px;
+    background-color:#CFD8DC;
+    border: 2px solid #BDBDBD;
+    font-size:16px;
+}
+.usersHeader a, .productsHeader a {
+    text-decoration:none;
+    padding: 5px;
+    margin:0px;
+    color:#757575;
+}
+.usersItem, .productsItem {
+    text-decoration:none;
+    padding:0px;
+    margin:0px;
+    color:#757575;
+    background-color:#CFD8DC;
+    border: 2px solid #BDBDBD;
+    font-size:16px;
+}
+.usersItem input, .productsItem input {
+    border:0px;
+    text-decoration:none;
+    padding:5px;
+    margin:0px;
+    color:#757575;
+    background-color:#CFD8DC;
+    cursor:pointer;
+}
+
+.usersItem input:hover, .productsItem input:hover {
+    background-color:#FF5722;
+    color:#FFFFFF;
+}
+
+#users_heading ~ div, #products_heading ~ div{
+    overflow:auto;
+}
+.gridViewUsers, .gridViewProducts{
+    width:100%;
+}
+.usersRoleContainer, .recordContainer {
+    width:100%;
+    box-sizing:border-box;
+}
+.fieldContainer, .litResponse {
+    width: 100%;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    color: #757575;
+}
+.litResponse {
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.recordControlButton, .gotoAddProductRecord {
+    width:100%;
+    text-align:center;
+    display:block;
+    box-sizing:border-box;
+    background-color: #CFD8DC;
+    color: #FF5722;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #FF5722;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:2px;
+}
+
+.recordContainer p, usersRoleContainer p {
+    font-size:inherit;
+    margin:0px;
+}
+.productImage {
+    width:100% !important;
+    height:auto !important;
+    max-height:500px;
+    max-width:500px;
+    vertical-align:top;
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+.validatorElements {
+    color: #FF5722;
+    font-size: 16px;
+    display: block;
+}
+
+.recordControlButton:hover {
+    background-color:#FF5722;
+    color:#FFFFFF;
+}
+.gotoAddProductRecord:hover {
+    background-color:#FF5722;
+    color:#FFFFFF;
+}
+
+@media (min-width: 31cm) {
+    #content_container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #administrator_container {
+        width: 30cm;
+        padding: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .adminHeading {
+        font-size: 3em;
+    }
+    .usersHeader a, .productsHeader a {
+        font-size:2em;
+    }
+    .usersItem input, .productsItem input {
+        font-size:1.2em;
+    }
+    .gotoAddProductRecord, .fieldContainer, .recordControlButton, .litResponse {
+        font-size: 1.6em;
+    }
+    .fieldContainer {
+        padding-top:5px;
+    }
+}
+
+@media (max-width: 31cm) {
+    #content_container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #administrator_container {
+        width: 100%;
+        padding: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .adminHeading {
+        font-size: 2.5em;
+    }
+    
+    .usersHeader a, .productsHeader a {
+        font-size:1.5em;
+    }
+    .usersItem input, .productsItem input {
+        font-size:1em;
+    }
+    .gotoAddProductRecord, .fieldContainer, .recordControlButton, .litResponse {
+        font-size: 1.2em;
+    }
+    .fieldContainer {
+        padding-top:2px;
+    }
+}

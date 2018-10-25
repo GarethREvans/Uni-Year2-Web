@@ -1,0 +1,63 @@
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CO5027OnlineShop.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>eTVs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/MasterPage.css" />
+    <asp:ContentPlaceHolder ID="headContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <%--Header of web page--%>
+        <div id="main_menu_top">
+            <%--Contains main menu--%>
+            <input id="menu_check_box" type="checkbox" />
+            <label id="side_menu_icon" for="menu_check_box"></label>
+            <%--Contains creation of burger menu icon--%>
+            <img id="CompanyLogo" runat="server" src="~/Images/Logo.png" alt="Logo" />
+            <%--Company logo--%>
+            <ul id="main_menu_items">
+                <%--Contains list of links to other areas of the website--%>
+                <li id="home_page"><a runat="server" href="~/default.aspx">Home</a></li>
+                <li id="products_page"><a runat="server" href="~/ProductsPage.aspx">Products</a></li>
+                <li id="contact_page"><a runat="server" href="~/ContactPage.aspx">Contact Us</a></li>
+                <li id="shopping_basket_page"><a runat="server" href="~/BasketPage.aspx">Basket</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <form id="form_content" runat="server">
+        <asp:Button ID="button_account" CssClass="accountButton" runat="server" Text="Logout" OnClick="account_Click" UseSubmitBehavior="false" ValidationGroup="none_logout" />
+        <div>
+            <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <div id="main_menu_bottom">
+            <%--Contains site map at the footer of the page for accessibility issues--%>
+            <ul id="main_menu_items_footer">
+                <%--Contains list of links to other areas of the website--%>
+                <li id="home_page_footer"><a runat="server" href="~/default.aspx">Home</a></li>
+                <li id="products_page_footer"><a runat="server" href="~/ProductsPage.aspx">Products</a></li>
+                <li id="contact_page_footer"><a runat="server" href="~/ContactPage.aspx">Contact Us</a></li>
+                <li id="shopping_basket_page_footer"><a runat="server" href="~/BasketPage.aspx">Basket</a></li>
+            </ul>
+            <p id="copyright_text">Copyright &#169; 2016 Gareth Evans all rights reserved</p>
+            <%--Copyright statement--%>
+            <ul id="admin_container">
+                <%--Contains admin links--%>
+                <li><a runat="server" href="~/AdminFolder/AdminPage.aspx">Admin</a></li>
+                <%--Link to allow admins to edit products--%>
+                <li><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a></li>
+                <li><a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

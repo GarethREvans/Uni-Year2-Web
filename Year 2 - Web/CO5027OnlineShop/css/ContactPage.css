@@ -1,0 +1,261 @@
+﻿* {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+}
+/*Styles form containers*/
+#content_container {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+#contact_us_container {
+    height: auto;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    color: #757575;
+    text-align: left;
+    border: solid 2px #BDBDBD;
+    background: #CFD8DC;
+}
+
+/*Styles form headings*/
+#contact_us_heading, #find_us_heading {
+    font-size: 3em;
+    text-shadow: 0px 0px 10px #455A64;
+    color: #FFFFFF;
+    margin-top: 0px;
+    border-bottom: solid 2px #BDBDBD;
+}
+/*Styles form objects*/
+.formLabel, .formInput {
+    color: #757575;
+    display: block;
+    box-sizing: border-box;
+}
+
+.formLabel {
+    margin-bottom: 1px;
+}
+
+.formInput {
+    width: 100%;
+    border: 2px solid #BDBDBD;
+}
+
+.submitMessage {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #CFD8DC;
+    color: #FF5722;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #FF5722;
+}
+/*Styles form objects when interacted with*/
+.formInput:focus {
+    border: 2px solid #FF5722;
+}
+
+.submitMessage:hover {
+    background-color: #FF5722;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.responseText {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+    .responseText:last-child {
+        margin-top: 0px;
+        font-weight: normal;
+    }
+
+#map_content_container {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: solid 2px #BDBDBD;
+}
+
+.staticMap {
+    display: block;
+    vertical-align: top;
+    width: 100%;
+}
+
+#store_location_google_maps {
+    width: 100%;
+    display: none;
+    box-sizing: border-box;
+}
+
+.validatorElements {
+    color: #FF5722;
+    font-size: 1em;
+    display: block;
+}
+
+/*Styles form objects and text for browsers over 26cm*/
+@media (min-width: 31cm) {
+    #content_container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #contact_us_container {
+        width: 30cm;
+        padding: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #contact_us_heading, #find_us_heading {
+        font-size: 3em;
+    }
+
+    .formLabel, .formInput, .submitMessage {
+        font-size: 1.6em;
+    }
+
+    .formLabel, .submitMessage {
+        margin-top: 20px;
+    }
+
+    .submitMessage {
+        margin-bottom: 20px;
+    }
+
+    .responseText {
+        font-size: 3em;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+
+        .responseText:last-child {
+            margin-top: 0px;
+            font-size: 2em;
+            margin-bottom: 60px;
+        }
+
+    #find_us_heading {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    #store_location_google_maps {
+        height: 500px;
+    }
+}
+/*Styles form objects and text for browsers under 26cm*/
+@media (max-width: 31cm) {
+    #content_container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #contact_us_container {
+        width: 100%;
+        padding: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #contact_us_heading, #find_us_heading {
+        font-size: 2.5em;
+    }
+
+    .formLabel, .formInput, .submitMessage {
+        font-size: 1.4em;
+    }
+
+    .formLabel, .submitMessage {
+        margin-top: 20px;
+    }
+
+    .submitMessage {
+        margin-bottom: 20px;
+    }
+
+    .responseText {
+        font-size: 2.5em;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+        .responseText:last-child {
+            margin-top: 0px;
+            font-size: 1.6em;
+            margin-bottom: 40px;
+        }
+
+    #find_us_heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #store_location_google_maps {
+        height: 300px;
+    }
+}
+/*Styles form objects and text for browsers under 12cm*/
+@media (max-width: 12cm) {
+    #content_container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #contact_us_container {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #contact_us_heading, #find_us_heading {
+        font-size: 1.8em;
+    }
+
+    .formLabel, .formInput, .submitMessage {
+        font-size: 1.2em;
+    }
+
+    .formLabel, .submitMessage {
+        margin-top: 10px;
+    }
+
+    .submitMessage {
+        margin-bottom: 10px;
+    }
+
+    .responseText {
+        font-size: 2em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+        .responseText:last-child {
+            margin-top: 0px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+    #find_us_heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #store_location_google_maps {
+        height: 200px;
+    }
+}
