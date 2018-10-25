@@ -1,4 +1,4 @@
-# Uni Year 2 Website
+#Uni Year 2 Website
 
 This repository contains a copy of my website project from my second year of university. It was developed with the use of HTML, CSS, JavaScript, C# and SQL.
 
